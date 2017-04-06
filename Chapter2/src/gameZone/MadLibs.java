@@ -37,7 +37,7 @@ public class MadLibs {
 		inputDevice.nextLine();
 		c = a -b;
 		
-		System.out.println("The " + color + " Dragon is the " + wordEST + " Dragon of all. \n It has " + bodyPartPlural + " ,and a " + animal + " shaped like a " + noun + ". \n It loves to eat " + pluralNoun + ", although it will feast on nearly anything.");
+		System.out.println("The " + color + " Dragon is the " + wordEST + " Dragon of all. \n It has " + bodyPartPlural + ",and a " + animal + " shaped like a " + noun + ". \n It loves to eat " + pluralNoun + ", although it will feast on nearly anything.");
 	}
 
 }
