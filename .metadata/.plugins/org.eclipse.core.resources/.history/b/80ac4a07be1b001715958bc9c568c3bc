@@ -22,6 +22,6 @@ public static void computeCommission(int value, double rate, char vehicle)
 		double commission;
 		commission = value * rate;
 		System.out.println("\nThe " + vehicle + " type vehicle is worth $" + value);
-		System.out.println("With " + (rate) + "% commission rate, the commission is $" + commission);
+		System.out.println("With " + (rate * 100) + "% commission rate, the commission is $" + commission);
 }
 }
