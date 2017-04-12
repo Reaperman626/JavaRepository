@@ -1,6 +1,6 @@
-package examples;
+package MingsRice;
 
-public class SalaryDialog {
+public class Mingsrice {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

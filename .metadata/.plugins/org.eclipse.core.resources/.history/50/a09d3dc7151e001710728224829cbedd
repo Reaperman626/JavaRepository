@@ -1,6 +1,6 @@
-package ProgrammingExercises;
+package youDoIt;
 
-public class NauticalMiles {
+public class SpaService {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
