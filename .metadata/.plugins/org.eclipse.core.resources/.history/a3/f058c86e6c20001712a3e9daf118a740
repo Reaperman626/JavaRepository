@@ -1,0 +1,42 @@
+package ExcercisesPage175;
+import java.util.Scanner;
+public class fourB {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num1 = 0;
+		int num2 = 0;
+		displayTwiceTheNumber(num1, num2);
+		displayNumberPlusFive(num1, num2);
+		displayNumberSquared(num1, num2);
+		
+		Scanner inputDevice = new Scanner(System.in);
+		
+		System.out.println("Pick a number >>>");
+		num1 = inputDevice.nextInt();
+		
+		System.out.println("Pick another number >>>");
+		num2 = inputDevice.nextInt();
+		
+		
+	}
+	public static void displayTwiceTheNumber(int n, int b)
+	{
+		int factor = 2;
+		System.out.println(n + " times " + factor + " is " + (n * factor));
+		System.out.println(b + " times " + factor + " is " + (b * factor));
+	}
+	public static void displayNumberPlusFive(int n, int b)
+	{
+		int factor = 5;
+		System.out.println(n + " plus " + factor + " is " + (n + factor));
+		System.out.println(b + " plus " + factor + " is " + (b + factor));
+
+	}
+	public static void displayNumberSquared(int n, int b)
+	{
+		System.out.println(n + " squared is " + (n * n));
+		System.out.println(b + " squared is " + (b * b));
+	}
+	}
+	
