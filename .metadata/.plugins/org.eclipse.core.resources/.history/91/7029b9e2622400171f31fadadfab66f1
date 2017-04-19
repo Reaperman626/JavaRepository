@@ -1,0 +1,27 @@
+package gamezone;
+import java.util.Scanner;
+public class DoorChoice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int doorChoice; //
+		int left;
+		int middle;
+		int right;
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Please pick a door. left right middle >>>");
+		doorChoice = input.nextInt();
+		if(doorChoice == left)
+		{
+			System.out.println("Sucks to be you! EMPTY");
+		}
+		if(doorChoice == middle)
+		{
+			System.out.println("Sucks to be you! CLOSET CANNON BOOM");
+		}
+		if(doorChoice == right)
+		{
+			System.out.println("Winner! Two bucks and ahhh....50 cents, some pocket lint, and a Werther's Original from 1972.");
+		}
+}}
