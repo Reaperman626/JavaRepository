@@ -1,3 +1,6 @@
+//MAAS
+//DELGATO'S
+//4-20-17
 package MingsRice;
 import java.util.Scanner;
 public class Mingsrice {
@@ -8,12 +11,20 @@ private static Scanner inputDevice;
 public static void main(String[] args)
 {
 	// TODO Auto-generated method stub
-	orderingMenu();
-	mingsShack();
 	mingsBanner();
+	menuDisplay();
+	mingsShack();
+	orderingMenu();
 	mingsMath(absoluteTotal);
 }
-
+	public static void menuDisplay()
+	{
+		System.out.println("Rices: White Rice $2.50, Fried Rice $3.50.");	
+		System.out.println("Soups: Eggdrop Soup $4.50, Sizzling Rice Soup $4.50.");
+		System.out.println("Side Dishes:Eggrolls $5.00, Crab Rangoon $5.00.");
+		System.out.println("Main Dishes: Lo Mein $7.50, Garlic Chicken $7.50.");
+		System.out.println("Water $2.00.");
+	}
 	public static void orderingMenu()
 	{
 		double FricePrice = 3.50;
@@ -31,72 +42,76 @@ public static void main(String[] args)
 		double MainOrder;
 		double RicetotalPrice= 0, SouptotalPrice= 0, SidetotalPrice= 0, MaintotalPrice = 0;
 		String order;
-		
+		String choice;
 		
 		inputDevice = new Scanner(System.in);
 		
 		
-		
-	System.out.println("What order do you want? >>>");
-	order = inputDevice.nextLine();
-	
-		if(order.equals("white")||order.equals("White"))
-		{
-			System.out.println("How many orders? >>>");
-			RiceOrder = inputDevice.nextDouble();
-			RicetotalPrice = RiceOrder * WricePrice;
-		}
-		if(order.equals("Fried")||order.equals("fried"))
-		{
-			System.out.println("How many orders? >>>");
-			RiceOrder = inputDevice.nextDouble();
-			RicetotalPrice = RiceOrder * FricePrice;
-		}
-	
-		if(order.equals("eggdrop")||order.equals("Eggdrop"))
-		{
-			System.out.println("How many orders? >>>");
-			SoupOrder = inputDevice.nextDouble(); 
-			SouptotalPrice = SoupOrder * EggdropPrice;
-		}
-		else if(order.equals("sizzling")||order.equals("Sizzling"))
-		{
-			System.out.println("How many orders? >>>");
-			SoupOrder = inputDevice.nextDouble();
-			SouptotalPrice = SoupOrder * SizzlingricePrice;
+
+		System.out.println("Would you like to order? Yes or No?>>>");
+		choice = inputDevice.nextLine();
+
+			if(choice.equals("yes")||choice.equals("Yes")||choice.equals("Y")||choice.equals("y"))
+			{
+				System.out.println("What would you like to order? >>>");
+				order = inputDevice.nextLine();
+				
+				if(order.equals("white rice")||order.equals("White Rice"))
+				{
+					System.out.println("How many orders? >>>");
+					RiceOrder = inputDevice.nextDouble();
+					RicetotalPrice = RiceOrder * WricePrice;
+				}
+				if(order.equals("Fried Rice")||order.equals("fried rice"))
+				{
+					System.out.println("How many orders? >>>");
+					RiceOrder = inputDevice.nextDouble();
+					RicetotalPrice = RiceOrder * FricePrice;
+				}
 			
-		}
-	
-		if(order.equals("eggroll")||order.equals("Eggroll"))
-		{
-			System.out.println("How many orders? >>>");
-			SideOrder = inputDevice.nextDouble();
-			SidetotalPrice = SideOrder * EggrollPrice;
-		}
-		if(order.equals("Crab Rangoon")||order.equals("crab rangoon"))
-		{
-			System.out.println("How many orders? >>>");
-			SideOrder = inputDevice.nextDouble();
-			SidetotalPrice = SideOrder * CrabRangoonPrice;
-		}
-		if(order.equals("lo mein")||order.equals("Lo Mein"))
-		{
-			System.out.println("How many orders? >>>");
-			MainOrder = inputDevice.nextDouble();
-			MaintotalPrice = MainOrder * LoMeinPrice;
-		}
-		else if(order.equals("garlic chicken")||order.equals("Garlic Chicken"))
-		{
-			System.out.println("How many orders? >>>");
-			MainOrder = inputDevice.nextDouble();
-			MaintotalPrice = MainOrder * GarlicChknPrice;
+				if(order.equals("eggdrop soup")||order.equals("Eggdrop Soup"))
+				{
+					System.out.println("How many orders? >>>");
+					SoupOrder = inputDevice.nextDouble(); 
+					SouptotalPrice = SoupOrder * EggdropPrice;
+				}
+				if(order.equals("sizzling rice soup")||order.equals("Sizzling Rice Soup"))
+				{
+					System.out.println("How many orders? >>>");
+					SoupOrder = inputDevice.nextDouble(); 
+					SouptotalPrice = SoupOrder * SizzlingricePrice;
+				}
+				if(order.equals("eggrolls")||order.equals("Eggrolls")||order.equals("Eggroll")||order.equals("eggroll"))
+				{
+					System.out.println("How many orders? >>>");
+					SideOrder = inputDevice.nextDouble(); 
+					SidetotalPrice = SideOrder * EggrollPrice;
+				}
+				if(order.equals("Crab Rangoons")||order.equals("crab rangoons")||order.equals("crab rangoon")||order.equals("Crab Rangoon"))
+				{
+					System.out.println("How many orders? >>>");
+					SideOrder = inputDevice.nextDouble();
+					SidetotalPrice = SideOrder * CrabRangoonPrice;
+				}
+				if(order.equals("lo mein")||order.equals("Lo Mein"))
+				{
+					System.out.println("How many orders? >>>");
+					MainOrder = inputDevice.nextDouble();
+					MaintotalPrice = MainOrder * LoMeinPrice;
+				}
+				else if(order.equals("garlic chicken")||order.equals("Garlic Chicken"))
+				{
+					System.out.println("How many orders? >>>");
+					MainOrder = inputDevice.nextDouble();
+					MaintotalPrice = MainOrder * GarlicChknPrice;
+				}
 			
 			System.out.println("Water will be " + Water + ".");
-			
+			}
+		absoluteTotal = SouptotalPrice + SidetotalPrice + RicetotalPrice + MaintotalPrice + Water;
 		}
 		
-		absoluteTotal = SouptotalPrice + SidetotalPrice + RicetotalPrice + MaintotalPrice + Water;
-	}
+	
 	public static void mingsShack()
 	{
 		System.out.println("        ******************************************");
@@ -126,9 +141,13 @@ public static void main(String[] args)
 	public static void mingsMath( double absoluteTotal)
 	{
 		double totalandTax;
-		final double salesTax = .7;
-		totalandTax = absoluteTotal * salesTax;
+		double totalTax;
+		final double salesTax = .07;
+		totalTax = absoluteTotal * salesTax;
+		totalandTax = absoluteTotal + totalTax;
 		System.out.println("Total with tax is " + totalandTax);
+	
 	}
+			
 }
 
