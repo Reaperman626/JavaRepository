@@ -27,24 +27,22 @@ public class RockPaperScissors {
 			System.out.print("Rock, paper, scissors SHOOT!");
 			gameChoice = ((int)(Math.random() * 100) % GAME_CHOICES + 1);
 			
-			
-		}
-		if(gameChoice==1)
+		if(gameChoice == 1)
 		{
-			System.out.print("Rock!");
+			System.out.print(" Rock!");
 		}
-		if(gameChoice==2)
+		if(gameChoice == 2)
 		{
-			System.out.print("Scissors!");
+			System.out.print(" Scissors!");
 		}
-		if(gameChoice==3)
+		if(gameChoice == 3)
 		{
-			System.out.print("Paper!");
+			System.out.print(" Paper!");
 		}
-		if(gameChoice==4)
+		if(gameChoice == 4)
 		{
-			System.out.print("BANG Revolver.");
+			System.out.print(" BANG Revolver. Shoulda' been quicker.");
 		}
 	}
 
-}
+}}
