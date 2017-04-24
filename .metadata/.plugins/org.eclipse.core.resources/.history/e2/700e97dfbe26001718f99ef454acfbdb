@@ -21,7 +21,7 @@ public class EvenOdd {
 				{
 				System.out.print("Your number is odd.");
 				}
-			if(number.equals("2")||number.equals("4")||number.equals("6")||number.equals("8")||number.equals("10"))
+			if(number.equals("2")||number.equals("4")||number.equals("6")||number.equals("7")||number.equals("8")||number.equals("10"))
 				{
 				System.out.print("Your number is even.");
 				}
