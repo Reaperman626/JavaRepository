@@ -1,0 +1,38 @@
+//MAAS
+//Condos
+//4-24-17
+package youDoIt;
+import java.util.Scanner;
+public class CondoSales {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String viewType;
+		
+		int PARK_VIEW_PRICE= 150000;
+		int GOLF_VIEW_PRICE= 170000;
+		int LAKE_VIEW_PRICE= 210000;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("What type of condo would you like? Golf view, Lake view, or Park view >>>");
+		viewType = input.nextLine();
+		if(viewType.equals("Golf View")||viewType.equals("golf view"))
+		{
+			System.out.print("Golf view condos are " + GOLF_VIEW_PRICE + ".");	
+		}
+		if(viewType.equals("Lake View")||viewType.equals("lake view"))
+		{
+			System.out.print("Lake view condos are " + LAKE_VIEW_PRICE + ".");	
+		}
+		if(viewType.equals("Park View")||viewType.equals("park view"))
+		{
+			System.out.print("Park view condos are " + PARK_VIEW_PRICE + ".");
+		}
+		else
+		{
+			System.out.print("Unknown condo type. Please verify with realtor.");
+		}
+	}
+
+}
