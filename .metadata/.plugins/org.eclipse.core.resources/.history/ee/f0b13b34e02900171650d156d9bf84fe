@@ -76,7 +76,7 @@ public class CellPhoneService {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("\nWhat data plan would you like to examine? Plan E, or Plan F?>>>");
+		System.out.print("What plan would you like to examine? Plan E, or Plan F?>>>");
 		datachoice = input.nextLine();
 		if(datachoice.equals("e")||datachoice.equals("E"))
 		{

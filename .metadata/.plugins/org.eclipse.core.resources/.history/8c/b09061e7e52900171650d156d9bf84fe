@@ -1,0 +1,39 @@
+//MAAS
+//Pay
+//4-25-17
+package youDoIt;
+import java.util.Scanner;
+public class Pay {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		skillLevelinsurance();
+		overTime();
+		paytotalbfDeductions();
+		deductions();
+		payCheck();
+		
+	}
+	public static void skillLevelinsurance()
+	{
+		int hours;
+		double payHours;
+		double SKILL_PAY_1 = 17.00;
+		double SKILL_PAY_2 = 20.00;
+		double SKILL_PAY_3 = 22.00;
+		double MED_INS = 32.50;
+		double DENT_INS = 20.00;
+		double LT_DIS_INS = 10.00;
+		String choice;
+		
+		inputDevice = new Scanner(System.in);
+		
+		System.out.print("What skill level are you? 1, 2, 3?>>>");
+		choice = input.nextLine();
+		if(choice.equals("1"))
+		{
+			System.out.print("How many hours did you work?>>>");
+			payHours = inputDevice.nextDouble(); 
+		}
+	}
+}
