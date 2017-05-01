@@ -5,11 +5,10 @@ package youDoIt;
 import java.util.Scanner;
 public class Pay {
 
-	public static void main(String[] args) 
-	{
+	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		skillLevelinsurance();
-		overTime(pay, pay2, pay3);
+		overTime();
 		paytotalbfDeductions();
 		deductions();
 		finalpayCheck();
@@ -94,7 +93,7 @@ public class Pay {
 				}
 		}
 	}
-	public static void overTime(pay, pay2, pay3)
+	public static void overTime(double pay, double pay2, double pay3)
 	{
 		final double overtime = 1.5;
 		double overtimepay;
