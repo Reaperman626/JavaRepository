@@ -36,6 +36,7 @@ public static void main(String[] args)
 		double LoMeinPrice = 7.50;
 		double GarlicChknPrice = 7.50;
 		double Water = 2.00;
+		double [] mingu = {3.50, 2.50, 5.00, 4.50, 4.50, 5.00, 7.50, 7.50, 2.00};
 		double RiceOrder;
 		double SoupOrder;
 		double SideOrder;
@@ -66,7 +67,7 @@ public static void main(String[] args)
 				{
 					System.out.println("How many orders? >>>");
 					RiceOrder = inputDevice.nextDouble();
-					RicetotalPrice = RiceOrder * FricePrice;
+					RicetotalPrice = RiceOrder * mingu[0];
 				}
 			
 				if(order.equals("eggdrop soup")||order.equals("Eggdrop Soup"))

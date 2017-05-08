@@ -1,0 +1,53 @@
+//MAAS
+//Projects 8.1,8.2,8.3
+//5-4-17
+package arrayproject;
+import java.util.*;
+public class Project8 {
+
+	public static void main(String[] args) 
+	{
+		int[] numbers = new int[10];
+		int number = 0;
+		int count = 0;
+		int total = 0;
+		int highest = 47;
+		final int QUIT = 777;
+		final int MAX = 6;
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter a number or " + QUIT + " to quit. >>>");
+		number = input.nextInt();
+		while(number != QUIT)
+		{
+			numbers[count] = number;
+			total = total + numbers[count];
+			count = count + 1;
+			if(highest <= number)
+				highest = number;
+			if(count == MAX)
+			{
+				number = QUIT;
+			}
+			else
+			{
+				System.out.print("Enter next number or " + QUIT + " to quit. >>>");
+				number = input.nextInt();
+			}
+		}
+		System.out.print("\nThe numbers entered were: ");
+		for(int x = 0; x < count; x = x + 1)
+		{
+			System.out.print(numbers[x] + " ");
+		}
+		if(count != 0)
+		{
+			System.out.println("\n The average is " + (total * 1.0/ count));
+		}
+		else
+		{
+			System.out.println("No numbers were entered.");
+		}
+
+	}
+
+}

@@ -1,0 +1,19 @@
+//MAAS
+//Average of quizzes
+//5-3-17
+package youDoIt;
+
+public class AverageOfQuizzes {
+
+	public static void main(String[] args) 
+	{
+		int[] scores = new int[10];
+		int score = 0;
+		int count = 0;
+		int total = 0;
+		final int QUIT = 999;
+		final int MAX = 10;
+
+	}
+
+}
