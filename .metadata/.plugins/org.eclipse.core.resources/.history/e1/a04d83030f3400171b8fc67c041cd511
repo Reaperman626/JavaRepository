@@ -80,7 +80,7 @@ public class Rtriangle {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("\nWhat is the height?");
+		System.out.print("What is the height?");
 		base = input.nextInt();
 		System.out.print("What is the measure of the base?");
 		height = input.nextInt();

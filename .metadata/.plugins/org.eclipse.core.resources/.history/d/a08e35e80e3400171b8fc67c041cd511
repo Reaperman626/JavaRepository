@@ -75,17 +75,7 @@ public class Rtriangle {
 	public static void triangleArea()
 	{
 		double area;
-		double height;
-		double base;
 		
-		Scanner input = new Scanner(System.in);
 		
-		System.out.print("\nWhat is the height?");
-		base = input.nextInt();
-		System.out.print("What is the measure of the base?");
-		height = input.nextInt();
-		
-		area = .5 * (base * height);
-		System.out.print("The area of the triangle " + area + ".");
 	}
 }

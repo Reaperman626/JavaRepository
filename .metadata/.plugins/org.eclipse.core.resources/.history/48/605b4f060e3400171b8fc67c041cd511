@@ -8,7 +8,7 @@ public class Rtriangle {
 	public static void main(String[] args)
 	{
 		sideMath();
-		trianglePerimeter();
+		trianglePerimeter(double sideA, sideB, sideC);
 		triangleArea();
 	}
 		
@@ -52,21 +52,10 @@ public class Rtriangle {
 			System.out.println(Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2)));
 		}
 	}
-	public static void trianglePerimeter()
+	public static void trianglePerimeter(double sideA, double sideB, double sideC)
 	{
-		double sideA;
-		double sideB;
-		double sideC;
+		
 		double perimeter;
-		
-		Scanner input = new Scanner(System.in);
-		
-		System.out.print("What is the measure of side C?");
-		sideC = input.nextInt();
-		System.out.print("What is the measure of side B?");
-		sideB = input.nextInt();
-		System.out.print("What is the measure of side A?");
-		sideA = input.nextInt();
 		
 		perimeter = sideA + sideB + sideC;
 		System.out.print("The perimeter of the triangle " + perimeter + ".");
@@ -75,17 +64,7 @@ public class Rtriangle {
 	public static void triangleArea()
 	{
 		double area;
-		double height;
-		double base;
 		
-		Scanner input = new Scanner(System.in);
 		
-		System.out.print("\nWhat is the height?");
-		base = input.nextInt();
-		System.out.print("What is the measure of the base?");
-		height = input.nextInt();
-		
-		area = .5 * (base * height);
-		System.out.print("The area of the triangle " + area + ".");
 	}
 }
