@@ -1,0 +1,33 @@
+//MAAS
+//Sarah's office
+//5-8-17
+package finalProject;
+
+import java.util.Scanner;
+
+public class SarahsRoom {
+
+	public static void main(String[] args) 
+	{
+		String doorChoice;
+		String searchChoice;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("Once on the 3rd floor Chad realizes that there is someone else who might have a key card, Reggi the tech manager.");
+		System.out.print("As he walks to Reggi's office however he stops right in front of Sarah's door.");
+		System.out.print("He stops at the door. KEEP GOING or OPEN DOOR? >>>");
+		 doorChoice = input.nextLine();
+		 if(doorChoice.equals("OPEN DOOR")||doorChoice.equals("open door"))
+		 {
+			 System.out.print("Chad opens the door, forgetting company policy 42B subsection 2 sentance ii. He's greeted by the scent of Sarah's alway present perfume.");
+			 System.out.print("Search DRAWERS, or COMPUTER?");
+			 searchChoice = input.nextLine();
+			 	if(searchChoice.equals("Drawer")||searchChoice.equals("open door"))
+			 	{
+			 		
+			 	}
+		 }
+	}
+
+}

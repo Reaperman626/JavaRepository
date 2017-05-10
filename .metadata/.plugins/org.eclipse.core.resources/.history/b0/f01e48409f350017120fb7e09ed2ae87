@@ -1,0 +1,18 @@
+//MAAS
+//Tech Manager
+//5-9-17
+package finalProject;
+
+public class ReggiesRoom {
+
+	public static void techManager() 
+	{
+		String doorChoice;
+		String dialogueChoice;
+		
+		System.out.print("Once outside Reggie's office Chad notices that the lights are still on.");
+		System.out.print("Reggie, or Regginald");
+
+	}
+
+}
